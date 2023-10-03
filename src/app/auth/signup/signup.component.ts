@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent {
-
+  whichPageToDisplay:string = 'singInUsingGoogle';
+  showPage(value:string){
+    this.whichPageToDisplay = value;
+  }
 }
